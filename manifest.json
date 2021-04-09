@@ -1,0 +1,10 @@
+{
+  // Required
+  "manifest_version": 1,
+  "name": "chromeWeather",
+  "version": "0.1",
+  "description": "we can check weather forecast by looking up zip code.",
+  "content_scripts": {
+    "js": ["./main.js"]
+  }
+}
