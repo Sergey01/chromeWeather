@@ -23,10 +23,12 @@ const sendZipCode = function () {
 		.then(function (data) {
 			let conditions = data.weather[0].main;
 			let temp = data.main.temp;
-			document.getElementById('temperature').innerText = 'Temperature: ' + temp;
+			document.getElementById('temperature').innerText = 'Temperature: ' + temp + "F";
 			document.getElementById('conditions').innerText =
 				'Conditions: ' + conditions;
 			document.getElementById('zipCode').innerText = 'Zip Code: ' + zip;
 		})
 		.catch((err) => console.log('Something is wrong: ', err)); // end of fetch
 };
+
+document.getElementById("button").addEventListener('click', sendZipCode);
