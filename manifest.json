@@ -1,10 +1,18 @@
+  
 {
-  // Required
-  "manifest_version": 1,
   "name": "chromeWeather",
   "version": "0.1",
   "description": "we can check weather forecast by looking up zip code.",
-  "content_scripts": {
-    "js": ["./main.js"]
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "./index.html",
+    "default_title": "Open the weather popup"
+  },
+  "icons":{
+    "16": "icon16.png",
+    "19": "icon19.png",
+    "38": "icon38.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }
