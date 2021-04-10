@@ -24,7 +24,8 @@ const sendZipCode = function () {
 		return response.json()
 	})
 	.then(function(data) {
-		({lat, lon} = data); // object destructuring. es6 ftw
+		lat = data.lat;
+		lon = data.lon;
 	}
 	)
 	.catch(function(err) {
