@@ -25,13 +25,16 @@
       padding: 50px;
       font-size: 150%;
     }
+    #userInput {
+      width: 100px;
+    }
 
   </style>
 </head>
 <body>
   <div class ="grid">
     <div class ="box input" id = "inputZipCode" >
-      <input type = "text" id = "userInput"/>
+      <input type = "text" id = "userInput" placeholder="Enter ZIP code"/>
       <button id = "button" onclick = "sendZipCode()">Submit</button>
     </div>
     <div class = "box current" id = "displayWeather">
