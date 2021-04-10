@@ -9,14 +9,19 @@
     /* add some style here later  */
     body {
       margin: 20px;
+      width: 650px;
+      height: 440px;
     }
     .grid {
       display: grid;
-      grid-template-columns: 200px 200px 200px;
+      grid-template-columns: repeat(3,200px);
+      grid-template-rows: repeat(3,1fr);
       grid-gap: 10px;
       background-color: #fff;
       color: #444;
       position: absolute;
+      text-align: center;
+      font-size: 70%;
     }
     .box {
       background-color: #444;
@@ -24,14 +29,15 @@
       border-radius: 5px;
       padding: 15%;
       font-size: 150%;
+      
     }
-
   </style>
 </head>
 <body>
   <div class ="grid">
     <div class ="box input" id = "inputZipCode" >
-      <input type = "text" id = "userInput"/>
+      <input type = "text" id = "userInput"/ style = "width: 100%;" placeholder="Input ZIP">
+      <br><br>
       <button id = "button">Submit</button>
     </div>
     <div class = "box current" id = "displayWeather">
